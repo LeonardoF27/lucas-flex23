@@ -1,0 +1,785 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Rolagem vertical com animação/velocidade */
+html {
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  /*cabealho*/
+
+
+#barTop {
+    background-color: #343434;
+    height: 40px;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+#barTop div {
+    display: flex;
+    color: #E5E5E5;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;;
+    font-style: normal;
+    width: 87%;
+    justify-content: flex-end;
+}
+
+#barTop div span { 
+    font-size: 12px;
+    justify-content: flex-end;
+}
+
+
+#barMain {
+    background-color: #F7BF50;
+    height: 80px;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#barMain div {
+    display: flex;
+    color: #343434;
+    width: 77%;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;;
+    font-style: normal;
+    font-size: 16px;
+    margin: auto;
+    height: 80px;
+}
+
+#barMain nav a {
+    text-decoration: none;
+    color: #343434;
+    padding: 7px;
+    padding-bottom: 29px;
+}
+
+#BarMainIMG a img {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+}
+
+
+/*Destaque foto e link do whats */
+
+
+.destaque {
+    background-image: url(../imagens/destaque.jpg);
+    height: 75vh;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+}
+
+.destaque h2 {
+    color: #343434;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.destaque nav {
+    padding-top: 20px;
+    text-decoration: solid;
+}
+
+.destaque a {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: #343434;
+}
+
+
+/*quantidade de produtos*/
+
+#blocos div{
+    width: 100%;
+    padding: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*Quadrado da quantidade de produtos */
+
+#blocos div nav {
+    width: 360px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 189px;
+    left: 594px;
+    top: 608px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+/*Textos dos blocos*/
+
+#texto1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 250;
+    font-size: 32px;
+    line-height: 60px;
+    text-align: center;
+    font-style: normal;
+}
+
+#texto2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 50px;
+    text-align: center;
+    color: #F7BF50;
+}
+
+#texto3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    
+    text-align: center;
+    
+    color: #343434;
+}
+
+/*Titulos*/
+
+article h2 {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    
+}
+
+/*Ambientes*/
+
+#ambientes {
+    background-image: url(../imagens/ambiente.jpg);
+    height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#FundoAmbientes {
+    background: rgba(247, 191, 80, 0.8);
+    width: 100%;
+    height: 60vh;
+}
+
+#ambientes nav p{
+    font-family: 'Poppins';
+    text-align: center;
+    color: #343434;
+    font-size: 18px;
+    text-decoration: solid;
+
+    height: 17vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin: auto;
+    width: 41%;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+#AjusteTabela {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    margin: auto;
+    padding-top: 20px;
+}
+
+table {
+    width: 30%;
+    text-decoration: solid;
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 23px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+table td {
+    padding: 10px;
+    padding-left: 10px;
+}
+
+
+/*ProdutosCards*/
+
+#DestaqueProdutos{
+    padding: 50px;
+}
+
+#CardsProdutos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#TituloCard {
+    font-family: 'Roboto';
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    font-style: normal;
+    font-size: 16px;
+}
+
+#BotaoCard {
+    font-family: 'Roboto';
+    font-weight: 600;
+    background: #F7BF50;
+    padding: 10px;
+    text-decoration: none;
+    color: #343434;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Contato*/
+
+#QuemSomos {
+    width: 75%;
+    background-color: #FFF4DE;
+    margin: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    padding: 50px;
+}
+
+#QuemSomos h1 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    padding: 10px;
+}
+
+#QuemSomos p {
+    font-family:'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 5px;
+
+    color: #000000;
+}
+
+/*Rodapé*/
+footer {
+    background-color: #343434;
+    text-align: center;
+    color: white;
+    padding: 5vh;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 15px;
+
+}
+
+/*Tilulos dos Produtos*/
+
+#TituloProdutos {
+    text-align: center;
+    padding: 25px;
+    font-family: 'Poppins';
+}
+
+/*Cortinas Persianas Toldos*/
+
+#CortinasPersianasToldos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+#CortinasPersianasToldos article {
+    padding: 22px;
+}
+
+#tituloCPT {
+    text-align: center;
+    padding: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #343434;
+    font-size: 32px;
+}
+
+/*Páginas dos produtos*/
+
+#AjusteDePaginas {
+    font-family: 'Roboto';
+    margin: auto;
+    width: 74%;
+    padding: 30px;
+}
+
+#MainFotos {
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+#MainFotos a img {
+  height: 250px;
+  width: 250px;
+  padding: 10px;
+  object-fit: cover;
+}
+
+
+/*Formulario*/
+
+#contato {
+    background: #FFF4DE;
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+}
+
+#Formulario {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+
+#TextoForm {
+    display: flex;
+    justify-content: center;
+}
+
+#TextoForm p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    width: 98%;
+
+    color: #343434;
+}
+
+#Formulario label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 17px;
+    line-height: 19px;
+    display: flex;
+    color: #343434;
+    justify-content: flex-start;
+    height: 25px;
+    font-weight: 700;
+}
+
+#Formulario input {
+    width: 600px;
+    height: 30px;
+}
+
+#Formulario textarea {
+    width: 600px;
+    height: 200px; 
+}
+
+#Formulario #Enviar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#Enviar button {
+    background-color: #F7BF50;
+    font-family: 'Roboto';
+    font-size: 16px;
+    width: 130px;
+    height: 50px;
+    left: 705px;
+    top: 927px;
+    border-radius: 4px;    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: #343434;
+    border: 2px;
+}
+
+/*Botão das páginas*/
+
+#Orcamento {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 50px;
+}
+
+#Orcamento a {
+    background-color: #F7BF50;
+    font-family: 'Roboto';
+    font-size: 16px;
+    width: 130px;
+    height: 50px;
+    left: 705px;
+    top: 927px;
+    border-radius: 4px;    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: #343434;
+    border: 2px;
+}
+
+
+/* Media Queries:
+Regras que só serão aplicadas quando
+o site for visualizado em determinados tamanhos
+de tela */
+
+/* 1º Breakpoint:
+Telas com largura à partir de 1000px */
+@media screen and (max-width: 1000px){
+
+    /*Cabeçalho de cima*/
+    #barTop {
+        width: 100%;
+    }
+    #barTop div {
+        width: 90%;
+    }
+    #barTop div span {
+        font-size: 12px;
+    }
+
+    /*Cabeçalho de baixo*/
+    #barMain {
+        width: 100%;
+        height: 90px;
+    }
+    #barMain div {
+        width: 85%;
+    }
+
+    /*Liks do cabeçalho*/
+    #BarMainLinks {
+        font-size: 15px;
+    }
+
+    /*Contatos do cabeçalho*/
+    #BarMainIMG {
+        display: none;
+    }
+
+    /*Quantidade de produtos*/
+    #blocos div{
+        width: 100%;
+        padding: 50px;
+    }
+    #blocos div nav {
+        width: 280px;
+        height: 165px;
+        top: 550px;
+        border-radius: 15px;
+    }
+
+    /*Texto dos blocos*/
+    #texto1 {
+        font-size: 30px;
+        height: 45px;
+    }
+    #texto2 {
+        font-size: 60px;
+        height: 45px;
+    }
+    #texto3 {
+        font-size: 20px;
+    }
+
+    /*Ambientes*/
+    #FundoAmbientes nav p {
+        width: 80%;
+        font-size: 20px;
+    }
+    #AjusteTabela table {
+        width: 80%;
+        padding-left: 70px;
+        font-size: 20px;
+    }
+
+    /*Destaques dos Produtos*/
+    #CardsProdutos {
+        flex-wrap: wrap;
+    }
+    #CardsProdutos nav{
+        padding-top: 20px;
+    }
+
+    /*Quem Somos*/
+    #QuemSomos p {
+        font-size: 20px;
+    }
+
+    /*Formulario*/
+    #Formulario {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* 2º Breakpoint:
+Telas com largura à partir de 800px */
+@media screen and (max-width: 800px){
+
+        /*Cabeçalho de cima*/
+        #barTop div span {
+            font-size: 11px;
+        }
+    
+        /*Liks do cabeçalho*/
+        #BarMainLinks a {
+            font-size: 14px;
+        }
+
+        /*Destaque do site*/
+        .destaque h2 {
+            font-size: 25px;
+        }
+    
+        /*Quantidade de produtos*/
+        #blocos div{
+            width: 95%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        #blocos div nav {
+            width: 195px;
+            height: 170px;
+        }
+    
+        /*Texto dos blocos*/
+        #texto1 {
+            font-size: 30px;
+        }
+        #texto2 {
+            font-size: 60px;
+        }
+        #texto3 {
+            font-size: 15px;
+        }
+
+        /*Ambientes*/
+        #FundoAmbientes nav p{
+            font-size: 17px;
+        }
+
+        #AjusteTabela table tr td {
+            font-size: 15px;
+        }
+    
+        /*Quem Somos*/
+        #QuemSomos p {
+            font-size: 15px;
+        }
+    
+        /*Formulario*/
+        #Formulario {
+            width: 100%;
+            justify-content: flex-start;
+        }
+        #Formulario form p input {
+            width: 550px;
+        }
+        #Formulario form p textarea {
+            width: 550px;
+        }
+}
+
+/* 3º Breakpoint:
+Telas com largura à partir de 730px */
+@media screen and (max-width: 730px){
+
+    /*Cabeçalho de baixo*/
+    #barMain {
+        height: 100px;
+    }
+    #barMain div {
+        width: 100%;
+        flex-direction: column;
+        justify-content: end;
+        background-color: #a8e1eb;
+    }
+
+    #logo h1 {
+        background-color: #F7BF50;
+    }
+
+    #logo h1 a  div {
+        background-color: #343434;
+        height: 100px;
+    }
+
+    /*Quantidade de produtos*/
+    #blocos div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 650px;
+    }
+
+        /*Formulario*/
+        #Formulario {
+            width: 100%;
+            justify-content: flex-start;
+        }
+        #Formulario form p input {
+            width: 490px;
+        }
+        #Formulario form p textarea {
+            width: 490px;
+        }
+
+}
+
+/* 4º Breakpoint:
+Telas com largura à partir de 500px */
+@media screen and (max-width: 500px){
+
+        /*Cabeçalho de baixo*/
+        #BarMainLinks a {
+            font-size: 12px;
+        }
+
+        /*Destaque*/
+        .destaque h2 {
+            font-size: 20px;
+        }
+    
+        /*Ambietes*/
+        #FundoAmbientes nav p {
+            font-size: 13px;
+        }
+        #AjusteTabela table tr td {
+            font-size: 12px;
+        }
+
+        /*Formulario*/
+        #TextoForm p {
+            font-size: 15px;
+        }
+        #Formulario form p input {
+            width: 315px;
+        }
+        #Formulario form p textarea {
+            width: 315px;
+        }
+
+        /*Rodapé*/
+        footer p {
+            font-size: 13px;
+        }
+}
+
+/* 4º Breakpoint:
+Telas com largura à partir de 397px */
+@media screen and (max-width: 397px){
+
+        /*Cabeçalho de cima*/
+        #barTop div span {
+            font-size: 10px;
+        }
+    
+        /*Cabeçalho de baixo*/
+        #BarMainLinks a {
+            font-size: 10px;
+        }
+
+        /*Destaque*/
+        
+    
+        /*Quem Somos*/
+        #QuemSomos h1 {
+            font-size: 25px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+    
+        /*Formulario*/
+        #Formulario form p label {
+            font-size: 15px;
+        }
+        #Formulario form p input {
+            width: 240px;
+        }
+        #Formulario form p textarea {
+            width: 240px;
+        }
+}
